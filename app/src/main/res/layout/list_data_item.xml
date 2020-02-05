@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="5dp"
+    android:background="@color/list">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        tools:src="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:text="Nama taman"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginBottom="8dp"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_descripstion"
+        android:text="Deskripsi"
+        android:ellipsize="end"
+        android:maxLines="2"/>
+    </LinearLayout>
+</RelativeLayout>
